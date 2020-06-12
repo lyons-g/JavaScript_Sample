@@ -1,0 +1,61 @@
+﻿@page
+@model JavaScript.Pages.CountdownModel
+@{
+    ViewData["Title"] = "Countdown";
+}
+
+<link rel="stylesheet" href="~/css/countdown.css" />
+
+<title>COUNTDOWN</title>
+<h1>@ViewData["Title"]</h1>
+
+
+<section class="section-center">
+    <!--image-->
+    <article class="gift-img">
+        <img src="./gift.jpg" alt="gift picture" />
+    </article>
+    <!--Info-->
+    <article class="gift-info">
+        <h3>basketball giveaway</h3>
+        <h4 class="giveaway">giveaway end on Sunday</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="deadline">
+            <!--Days-->
+            <div class="deadline-format">
+                <div>
+                    <h4 class="days">34</h4>
+                    <span>days</span>
+                </div>
+            </div>
+            <!--End of Item-->
+            <!--Hours-->
+            <div class="deadline-format">
+                <div>
+                    <h4 class="hours">34</h4>
+                    <span>hours</span>
+                </div>
+            </div>
+            <!--End of Item-->
+            <!--mins-->
+            <div class="deadline-format">
+                <div>
+                    <h4 class="mins">34</h4>
+                    <span>mins</span>
+                </div>
+            </div>
+            <!--End of Item-->
+            <!--sec-->
+            <div class="deadline-format">
+                <div>
+                    <h4 class="secs">34</h4>
+                    <span>secs</span>
+                </div>
+            </div>
+            <!--End of Item-->
+        </div>
+    </article>
+</section>
+
+<script src="~/js/countdown.js"></script>

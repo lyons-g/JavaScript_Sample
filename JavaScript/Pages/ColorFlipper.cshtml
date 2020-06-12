@@ -1,0 +1,30 @@
+﻿@page
+@{
+    ViewData["Title"] = "Color Flipper";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>
+            <a asp-page="/ColorFlipper" class="btn btn-primary">Simple</a>
+        </h4>
+    </div>
+    <div class="col-md-6">
+        <h4>
+            <a asp-page="/hex" class="btn btn-secondary">Hex</a>
+        </h4>
+    </div>
+</div>
+
+<main>
+    <div class="container">
+        <h2>
+            Background color : <span class="color">
+                #D3D3D3
+            </span>
+        </h2>
+        <button class="btn btn-danger" id="btn">Click me</button>
+    </div>
+</main>
